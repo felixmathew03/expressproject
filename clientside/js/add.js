@@ -14,6 +14,8 @@ document.getElementById("frm").addEventListener("submit",async(e)=>{
         console.log(res);
         if(res.status==201){
             alert("success");
+        }else if(res.status==400){
+            alert("Phone no. already exist")
         }
         else{
             alert("error")

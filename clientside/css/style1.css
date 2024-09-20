@@ -14,11 +14,11 @@
     z-index: 5;
 }
 .navbar h1{
-    color: rgb(7, 7, 7);
+    color: rgb(66, 3, 3);
     margin-left: 1%;
-    text-shadow: 1px 1px 0 #e9e0e0,
-                        2px 2px 0 #e9e0e0,
-                        3px 3px 0 #e9e0e0;
+    text-shadow: 1px 1px 0 #f3b4b4,
+                        2px 2px 0 #f3b4b4,
+                        3px 3px 0 #f3b4b4;
 }
 .right{
     width: 28%;
