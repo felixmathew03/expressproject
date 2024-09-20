@@ -11,10 +11,10 @@ async function getDonors() {
                     <td>${donor.dob}</td>
                     <td>${donor.place}</td>
                     <td>${donor.phone}</td>
-                    <td>${donor.blood_group}</td>
+                    <td>${donor.blood_group}ve</td>
                     <td>Eligibe</td>
                     <td class="actions">
-                        <button>Edit</button>
+                        <a href="./pages/edit.html"><button>Edit</button></a>
                         <button>Delete</button>
                     </td>
         </tr>

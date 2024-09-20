@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Donor Information</title>
+    <link rel="stylesheet" href="../css/style3.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Edit Donor Information</h1>
+        <form id="frm" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" value="name">
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" value="age">
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" value="dob">
+
+            <label for="place">Place:</label>
+            <input type="text" id="place" name="place" value="place">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" value="phone">
+
+            <label for="blood_group">Blood Group:</label>
+            <select id="blood_group" name="blood_group" value="blood_group">
+                <option value="">Select Blood Group</option>
+                <option value="A+">A+</option>
+                <option value="A-">A-</option>
+                <option value="B+">B+</option>
+                <option value="B-">B-</option>
+                <option value="AB+">AB+</option>
+                <option value="AB-">AB-</option>
+                <option value="O+">O+</option>
+                <option value="O-">O-</option>
+            </select>
+
+            <div class="buttons">
+                <button >Submit</button>
+                <button type="reset">Reset</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="../js/add.js"></script>
+</body>
+</html>
