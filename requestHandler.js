@@ -24,3 +24,15 @@ export async function getDonors(req,res) {
         res.status(404).send({msg:error})
     }
 }
+
+export async function getDonor(req,res) {
+    try {
+        console.log(req.params);
+        const {id}=req.params
+        const data=await donorSchema.findOne({_id:id});
+        console.log(data);
+        res.status(200).send(data);
+    } catch (error) {
+        res.status(404).send(error)
+    }
+}
