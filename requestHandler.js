@@ -36,3 +36,24 @@ export async function getDonor(req,res) {
         res.status(404).send(error)
     }
 }
+export async function editDonor(req,res) {
+    try {
+        const {_id}=req.params;
+    const {...donor}=req.body;
+    const data=await donorSchema.updateOne({_id},{$set:{...donor}});
+    res.status(201).send(data);
+    } catch (error) {
+        res.status(404).send(error)
+    }
+    
+}
+export async function deleteDonor(req,res) {
+    try {
+        const {_id}=req.params;
+        console.log(_id);
+        const data=await donorSchema.deleteOne({_id});
+        res.status(201).send(data);
+    } catch (error) {
+        res.status(404).send(error)
+    }   
+}
